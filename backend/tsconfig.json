@@ -1,0 +1,25 @@
+{
+    "ts-node": {
+    	
+    },
+    "compilerOptions": {
+        "types": ["mocha"],
+      	"target": "ESNext", /* Compiles to the latest ECMAScript standard available. */
+      	"module": "CommonJS", /* Generates code using the CommonJS module system, commonly used in Node.js. */
+      	"strict": true,
+      	"esModuleInterop": true,
+      	"skipLibCheck": true,
+      	"forceConsistentCasingInFileNames": true,
+      	"outDir": "../dist",
+      	"rootDir": "." ,
+      	"paths": {
+          "@base/*": ["./*"],
+          "@constants/*": ["./configs/constants/*"],
+      	}
+    },
+    "include": [
+      	"**/*.ts",
+      	"./**/*.ts"
+    ],
+    "exclude": ["node_modules/**/*.(js|jsx|d.ts)"]
+}

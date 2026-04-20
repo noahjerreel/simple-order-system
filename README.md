@@ -60,10 +60,15 @@ order-system
     ├── package.json
     ├── tsconfig.json
     │
-    └── production
+    └── src
         ├── index.tsx
         ├── App.tsx
-        ├── api.ts
+        ├── api
+        │   └── order.api.tsx
+        │ 
+        ├── helpers
+        │   └── security.helper.tsx
+        │ 
         └── types.ts
 ```
 
